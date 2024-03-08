@@ -61,7 +61,7 @@ fun FinanceSection(){
             fontSize = 24.sp,
             color = MaterialTheme.colorScheme.onBackground,
             fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier.padding(12.dp)
         )
 
         LazyRow {

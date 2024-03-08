@@ -66,7 +66,7 @@ fun HomeScreen(){
 
             WalletSection()
             CardsSection()
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(12.dp))
             FinanceSection()
             CurrenciesSection()
 

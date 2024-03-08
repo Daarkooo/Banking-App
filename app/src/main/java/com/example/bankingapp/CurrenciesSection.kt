@@ -76,7 +76,7 @@ val currencies = listOf(
 @Composable
 fun CurrenciesSection(){
     var isVisible by remember {
-        mutableStateOf(false) // need to be false at first (true just for testing)
+        mutableStateOf(falsea) // need to be false at first (true just for testing)
     }
     var iconsState by remember {
         mutableStateOf(Icons.Rounded.KeyboardArrowUp) // before open the currencies tab
@@ -85,7 +85,7 @@ fun CurrenciesSection(){
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = 32.dp),
+            .padding(top = 16.dp),
         contentAlignment = Alignment.BottomCenter
     ){
 
@@ -98,7 +98,7 @@ fun CurrenciesSection(){
 
             Row(
                 modifier = Modifier
-                    .padding(16.dp)
+                    .padding(horizontal = 16.dp, vertical = 16.dp)
                     .animateContentSize()
                     .fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
@@ -157,7 +157,7 @@ fun CurrenciesSection(){
                     val width = boxWithConstraintsScope.maxWidth / 3 // the 3 column take the same size (3 parts equals)
 
                     Column(modifier = Modifier.fillMaxWidth()
-                        .padding(horizontal = 20.dp)
+                        .padding(horizontal = 16.dp)
                     ){
 
                         Spacer(modifier = Modifier.height(16.dp))
